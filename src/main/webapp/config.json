@@ -1,0 +1,42 @@
+{
+  "displayName" : "DragAndDrop",
+  "group" : "",
+  "iconUrl" : "/resources/images/imagelists/prefab-icon.png",
+  "resources" : {
+    "styles" : [ "/pages/Main/Main.css" ],
+    "scripts" : [ ]
+  },
+  "properties" : {
+    "draggablewidgetnames" : {
+      "type" : "string",
+      "displayName" : "Draggable Widget Names",
+      "description" : "Names of draggable widgets",
+      "bindable" : "in-bound",
+      "isList" : true,
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    },
+    "droppablewidgenames" : {
+      "type" : "string",
+      "displayName" : "Droppable Widget Names",
+      "description" : "Names of droppable widgets",
+      "bindable" : "in-bound",
+      "isList" : true,
+      "widget" : "string",
+      "show" : true,
+      "disabled" : false
+    },
+    "dragndropmapping" : {
+      "type" : "object",
+      "displayName" : "DragNDrop Mapping",
+      "description" : "Return the object containing the draggable widget id and corresponding drop widget name",
+      "bindable" : "out-bound",
+      "widget" : "string",
+      "show" : false,
+      "disabled" : true
+    }
+  },
+  "events" : { },
+  "methods" : { }
+}
